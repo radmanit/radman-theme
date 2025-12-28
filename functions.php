@@ -496,14 +496,9 @@ require_once __DIR__ . '/vendor/plugin-update-checker/plugin-update-checker.php'
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $themeUpdateChecker = PucFactory::buildUpdateChecker(
-        'https://github.com/Promainir/radman-theme',
+        'https://github.com/radmanit/radman-theme',
         __FILE__,
         'radman-theme'
 );
 
-// branch
 $themeUpdateChecker->setBranch('master');
-
-$themeUpdateChecker->setAuthentication('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');
-
-
